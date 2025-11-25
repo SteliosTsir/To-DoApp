@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>To-Do App</title>
+    <title>Settings</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="nav-list">
-                    <a href="index.html" class="nav-link active">
+                    <a href="index.html" class="nav-link">
                         <ion-icon name="home-outline" class="nav-icon"></ion-icon>
                         <span class="nav-name">To-do list</span>
                     </a>
@@ -57,7 +57,7 @@
 
                 </div>
             </div>
-            <a href="settings.html" class="nav-link">
+            <a href="settings.html" class="nav-link active">
                 <ion-icon name="settings-outline" class="nav-icon"></ion-icon>
                 <span class="nav-name">Settings</span>
             </a>
@@ -65,54 +65,12 @@
     </div>
 
     <div>
-        <span class="head-name">To-do list</span>
+        <span class="head-name">Settings</span>
     </div>
-
-    <div class="kanban-board">
-
-        <!-- New Task -->
-        <div class="kanban-column">
-            <h2>New Task</h2>
-            <button id="addTaskBtn" class="new-task-btn">+ New Task</button>
-            <div class="kanban-items" id="new-task"></div>
-        </div>
-
-        <!-- Schedule -->
-        <div class="kanban-column">
-            <h2>Scheduled</h2>
-            <div class="kanban-items" id="schedule"></div>
-        </div>
-
-        <!-- In Progress -->
-        <div class="kanban-column">
-            <h2>In Progress</h2>
-            <div class="kanban-items" id="in-progress"></div>
-        </div>
-    </div>
-
-    <!-- Task Modal -->
-    <div id="taskModal" class="modal">
-        <div class="modal-content">
-        <h3 id="modalTitle">New Task</h3>
-        <label>
-            Task Name:
-            <input type="text" id="taskNameInput" placeholder="Enter task name">
-        </label>
-        <label>
-            Expiration Date:
-            <input type="date" id="taskDateInput">
-        </label>
-            <div class="modal-buttons">
-                <button id="cancelTaskBtn">Cancel</button>
-                <button id="saveTaskBtn">Save</button>
-            </div>
-        </div>
-    </div>
-
-    <div id="toast" class="toast"></div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     <script src="js/main.js"></script>
 </body>
 </html>
