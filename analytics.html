@@ -30,6 +30,7 @@
 
 
 </head>
+
 <body id="body-pd">
     <div class="l-navbar" id="navbar">
         <nav class="nav">
@@ -68,9 +69,32 @@
         <span class="head-name">Analytics</span>
     </div>
 
+    <div class="analytics-container">
+        <div class="analytics-card">
+            <h3>New Tasks</h3>
+            <span id="count-new">0</span>
+        </div>
+
+        <div class="analytics-card">
+            <h3>Scheduled</h3>
+            <span id="count-scheduled">0</span>
+        </div>
+
+        <div class="analytics-card">
+            <h3>In Progress</h3>
+            <span id="count-inprogress">0</span>
+        </div>
+
+        <div class="analytics-card">
+            <h3>Completed</h3>
+            <span id="count-completed">0</span>
+        </div>
+    </div>
+
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <script src="js/main.js"></script>
+    <script src="js/analytics.js"></script>
 </body>
 </html>

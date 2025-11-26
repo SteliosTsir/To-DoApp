@@ -27,7 +27,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       integrity="sha512-M9P1e/+qk4YcRDvlg8RMFqV0t+uIb9Tz0z42wQlwhQfpA2eDJBGU1L5fz88l0zMtf934Voy8qN1xwE80Ja9C5A=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
 </head>
 <body id="body-pd">
@@ -90,21 +90,27 @@
         </div>
     </div>
 
-    <!-- Task Modal -->
-    <div id="taskModal" class="modal">
-        <div class="modal-content">
-        <h3 id="modalTitle">New Task</h3>
-        <label>
-            Task Name:
-            <input type="text" id="taskNameInput" placeholder="Enter task name">
-        </label>
-        <label>
-            Expiration Date:
-            <input type="date" id="taskDateInput">
-        </label>
+    <div class="modal-overlay" id="taskModal">
+        <div class="modal modal-form">
+            <button class="modal-close" onclick="hideModal('taskModal')">×</button>
+            <h2 id="modalTitle">New Task</h2>
+            <div class="modal-content">
+                <div class="form-group">
+                    <label class="form-label">Task Name</label>
+                    <input type="text" class="form-input" id="taskNameInput" placeholder="Enter task name">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Task Details</label>
+                    <textarea type="text" class="form-input" id="taskDetailsInput"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="taskDateInput" class="form-label">Due Date</label>
+                    <input type="text" id="taskDateInput" class="form-input" placeholder="DD/MM/YYYY">
+                </div>
+            </div>
             <div class="modal-buttons">
-                <button id="cancelTaskBtn">Cancel</button>
-                <button id="saveTaskBtn">Save</button>
+                <button class="btn btn-secondary" id="cancelTaskBtn">Cancel</button>
+                <button class="btn btn-primary" id="saveTaskBtn">Save</button>
             </div>
         </div>
     </div>
@@ -112,6 +118,7 @@
     <div id="toast" class="toast"></div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="js/main.js"></script>
 </body>
